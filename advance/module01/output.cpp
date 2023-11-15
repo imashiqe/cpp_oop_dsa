@@ -1,20 +1,24 @@
 #include <iostream>
 #include <stdio.h>
-using namespace std;
 int main()
 {
-    // int a=10;
-    // long long int b = (long long int)(a);
-    // long long int b=100000;
-    // scanf("%d",&a);
-    // cin >> a >> b;
-    // cout << a << " " << b << endl;
-    // char c;
-    // cin >> c;
+    // std::cout << "hello world";
+    int a = 10;
+    long long int b = 100000000000;
+    float c = 1.5;
+    double d = 1.56666655;
+    char cc = 'A';
 
-    // cout << int(c) << endl;
-    int a;
-    char c;
-    cin >> a >> c;
-    cout << a << " " << c;
+    // printf("%d", a);
+    // std::cout << a;
+    // my favourite number is a
+    // printf("my favourite number is %d", a);
+    // std::cout << "my favourite number is " << a;
+    // std::cout << "my " << a << " favourite number is";
+    // std::cout << a << " " << b;
+    // printf("%d\n%lld", a, b);
+    // endl
+    std::cout << a << std::endl
+              << b << std::endl;
+    return 0;
 }
