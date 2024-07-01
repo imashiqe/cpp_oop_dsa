@@ -1,7 +1,3 @@
-
-ChatGPT
-Certainly! Here's a template for a GitHub repository description focused on data structures and algorithms questions solved in C++:
-
 Data Structures and Algorithms in C++
 This repository contains solutions to various classic data structures and algorithms problems implemented in C++. Each problem includes a detailed explanation and analysis of the solution approach.
 
