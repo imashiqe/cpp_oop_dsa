@@ -25,3 +25,4 @@ int main()
     cout<<a.next->val<<endl;
     return 0;
 }
+

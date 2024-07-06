@@ -17,17 +17,14 @@ class Node
 
 int main()
 {
-    Node a(10),b(20);
+    Node* head = new Node(10);
+    Node* a = new Node(20);
 
-    a.val=10;
-    b.val=20;
+    head->next = a;
 
-    a.next=&b;
-    b.next=NULL;
-
-    cout<<a.val<<endl;
-    cout<<b.val<<endl;
-    cout<<(*a.next).val<<endl;
-    cout<<a.next->val<<endl;
+    cout<<head->val<<endl;
+    cout<<a->val<<endl;
+    cout<<head->next->val<<endl; 
+    cout<<(*(*head).next).val<<endl;
     return 0;
 }
