@@ -33,6 +33,7 @@ int main()
             r=mid_index-1;
         }
     }
+    
     if(flag==true) cout<<"YES"<<endl;
     else cout<<"NO"<<endl;
     return 0;
