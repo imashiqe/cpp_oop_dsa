@@ -1,19 +1,18 @@
 #include <iostream>
-
+using namespace std;
 struct Node {
     int data;
     Node* next;
     Node* prev;
-    Node(int val) : data(val), next(nullptr), prev(nullptr) {}
+    Node(int value) : data(value), next(nullptr), prev(nullptr) {}
 };
 class Solution{
 public:
     Node* head;
     Node* tail;
    Solution() : head(nullptr), tail(nullptr) {}
-
-    void append(int val) {
-        Node* newNode = new Node(val);
+    void append(int value) {
+        Node* newNode = new Node(value);
         if (!head) {
             head = tail = newNode;
         } else {
@@ -25,10 +24,8 @@ public:
 
     bool isPalindrome() {
         if (!head || !head->next) return true; 
-        
         Node* left = head;
         Node* right = tail;
-        
         while (left != right && left->prev != right) {
             if (left->data != right->data) return false;
             left = left->next;
@@ -39,7 +36,7 @@ public:
 };
 
 int main() {
-    DoublyLinkedList dll;
+    Solution dll;
     int value;
     while (std::cin >> value && value != -1) {
         dll.append(value);
