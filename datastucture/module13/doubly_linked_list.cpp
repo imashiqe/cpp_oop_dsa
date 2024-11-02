@@ -61,6 +61,11 @@ class Node
           return sz;
         }
 
+        bool empty()
+        {
+          return sz == 0;
+        }
+
    };
 
   
@@ -83,7 +88,6 @@ int main()
         st.pop();
     }
     
-        return 0
-
+    return 0;
 
 }
